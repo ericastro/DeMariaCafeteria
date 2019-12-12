@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Npgsql;
 
-namespace WindowsFormsCRUDPgSql
+namespace WindowsFormsCafeteria
 {
     class Conexao
     {
@@ -81,7 +81,7 @@ namespace WindowsFormsCRUDPgSql
             get
             {
                 if (String.IsNullOrEmpty(dataBaseName))
-                    dataBaseName = "Cafeteria";
+                    dataBaseName = "DeMariaEric";
                 return dataBaseName;
             }
             set => dataBaseName = value;
