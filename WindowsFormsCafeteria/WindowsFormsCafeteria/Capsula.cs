@@ -13,9 +13,9 @@ namespace WindowsFormsCafeteria
 
         }
 
-        public int capsulas_id { get; set; }
-        public string descricao { get; set; }
-        public int forca { get; set; }
+        public int Capsulas_id { get; set; }
+        public string Descricao { get; set; }
+        public int Forca { get; set; }
 
         public void IncluirCapsula(Capsula capsula)
         {
