@@ -62,12 +62,14 @@ namespace WindowsFormsCafeteria
                 using (NpgsqlConnection conn = new NpgsqlConnection(conexao.ConnString))
                 {
                     NpgsqlCommand cmd = new NpgsqlCommand();
+                    string dataDeHoje = DateTime.Now.ToString("yyyy-MM-dd");
 
                     conn.Open();
                     cmd.Connection = conn;
-                    cmd.CommandText = "select count(*) as quantidade_capsulas from cafeteria.\"estoque\" where \"capsula_id\" = @CapsulaId and \"data_saida\" ISNULL";
+                    cmd.CommandText = "select count(*) as quantidade_capsulas from cafeteria.\"estoque\" where \"capsula_id\" = @CapsulaId and \"data_saida\" ISNULL and \"validade\" > @DataDeHoje";
                     cmd.CommandType = CommandType.Text;
                     cmd.Parameters.Add(new NpgsqlParameter("@capsulaId", capsulaId));
+                    cmd.Parameters.Add(new NpgsqlParameter("@DataDeHoje", Convert.ToDateTime(dataDeHoje)));
 
                     NpgsqlDataReader reader = cmd.ExecuteReader();
                     dtCapsula.Load(reader);

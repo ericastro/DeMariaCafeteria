@@ -25,16 +25,16 @@ namespace WindowsFormsCafeteria
 
         private void FazerCafe()
         {
-            if (string.IsNullOrEmpty(tbxQuantidade.Text))
+            if (cbxTipoDeCapsula.SelectedIndex < 1)
             {
-                MessageBox.Show("Digite uma descrição para a Cápsula!");
-                tbxQuantidade.Focus();
+                MessageBox.Show("Escolha um tipo de Cápsula para o seu café!");
+                cbxTipoDeCapsula.Focus();
                 return;
             }
-            else if (cbxTipoDeCapsula.SelectedIndex < 1)
+            else if (string.IsNullOrEmpty(tbxQuantidade.Text))
             {
-                MessageBox.Show("Escolha uma força para a Cápsula!");
-                cbxTipoDeCapsula.Focus();
+                MessageBox.Show("Digite uma quantidade de xícara(s)!");
+                tbxQuantidade.Focus();
                 return;
             }
             else
