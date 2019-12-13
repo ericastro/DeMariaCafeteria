@@ -58,5 +58,11 @@ namespace WindowsFormsCafeteria
         {
             MessageBox.Show("Ainda estamos trabalhando neste módulo!");
         }
+
+        private void fazerCaféToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCafeteira form = new FormCafeteira();
+            form.Show();
+        }
     }
 }

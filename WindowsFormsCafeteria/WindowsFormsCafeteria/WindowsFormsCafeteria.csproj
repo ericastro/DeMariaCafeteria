@@ -82,6 +82,12 @@
     </Compile>
     <Compile Include="Conexao.cs" />
     <Compile Include="Estoque.cs" />
+    <Compile Include="FormCafeteira.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCafeteira.Designer.cs">
+      <DependentUpon>FormCafeteira.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCapsulaEditar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +114,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormCafeteira.resx">
+      <DependentUpon>FormCafeteira.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCapsulaIncluir.resx">
       <DependentUpon>FormCapsulaIncluir.cs</DependentUpon>
     </EmbeddedResource>

@@ -119,6 +119,7 @@ C:\Users\Eric Castro\Documents\GitHub\DeMariaCafeteria\WindowsFormsCafeteria\Win
 C:\Users\Eric Castro\Documents\GitHub\DeMariaCafeteria\WindowsFormsCafeteria\WindowsFormsCafeteria\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Eric Castro\Documents\GitHub\DeMariaCafeteria\WindowsFormsCafeteria\WindowsFormsCafeteria\bin\Debug\System.ValueTuple.xml
 C:\Users\Eric Castro\Documents\GitHub\DeMariaCafeteria\WindowsFormsCafeteria\WindowsFormsCafeteria\obj\Debug\WindowsFormsCafeteria.exe.config
+C:\Users\Eric Castro\Documents\GitHub\DeMariaCafeteria\WindowsFormsCafeteria\WindowsFormsCafeteria\obj\Debug\WindowsFormsCafeteria.FormCafeteira.resources
 C:\Users\Eric Castro\Documents\GitHub\DeMariaCafeteria\WindowsFormsCafeteria\WindowsFormsCafeteria\obj\Debug\WindowsFormsCafeteria.FormCapsulaIncluir.resources
 C:\Users\Eric Castro\Documents\GitHub\DeMariaCafeteria\WindowsFormsCafeteria\WindowsFormsCafeteria\obj\Debug\WindowsFormsCafeteria.FormEstoqueIncluir.resources
 C:\Users\Eric Castro\Documents\GitHub\DeMariaCafeteria\WindowsFormsCafeteria\WindowsFormsCafeteria\obj\Debug\WindowsFormsCafeteria.FormPrincipal.resources
@@ -128,4 +129,3 @@ C:\Users\Eric Castro\Documents\GitHub\DeMariaCafeteria\WindowsFormsCafeteria\Win
 C:\Users\Eric Castro\Documents\GitHub\DeMariaCafeteria\WindowsFormsCafeteria\WindowsFormsCafeteria\obj\Debug\WindowsFormsCafeteria.csproj.CopyComplete
 C:\Users\Eric Castro\Documents\GitHub\DeMariaCafeteria\WindowsFormsCafeteria\WindowsFormsCafeteria\obj\Debug\WindowsFormsCafeteria.exe
 C:\Users\Eric Castro\Documents\GitHub\DeMariaCafeteria\WindowsFormsCafeteria\WindowsFormsCafeteria\obj\Debug\WindowsFormsCafeteria.pdb
-C:\Users\Eric Castro\Documents\GitHub\DeMariaCafeteria\WindowsFormsCafeteria\WindowsFormsCafeteria\obj\Debug\WindowsFormsCafeteria.csprojAssemblyReference.cache
