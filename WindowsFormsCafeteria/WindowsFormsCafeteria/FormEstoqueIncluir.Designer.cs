@@ -109,6 +109,7 @@
             this.Controls.Add(this.lblTipoDeCapsula);
             this.Controls.Add(this.btnIncluir);
             this.Name = "FormEstoqueIncluir";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Controle de Estoque";
             this.ResumeLayout(false);
             this.PerformLayout();
