@@ -40,7 +40,8 @@ namespace WindowsFormsCafeteria
 
         private void cadastrarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Ainda estamos trabalhando neste módulo!");
+            FormEstoqueIncluir form = new FormEstoqueIncluir();
+            form.Show();
         }
 
         private void listarToolStripMenuItem1_Click(object sender, EventArgs e)

@@ -10,8 +10,6 @@ namespace WindowsFormsCafeteria
 {
     public class Capsula
     {
-        private int forca;
-
         public Capsula()
         {
 
@@ -48,10 +46,22 @@ namespace WindowsFormsCafeteria
             return result;
         }
 
-        public void ListarCapsulas()
+        public DataTable ListarCapsulas()
         {
+            DataTable dtCapsula = new DataTable();
+            Conexao conexao = new Conexao();
+            NpgsqlConnection conn = new NpgsqlConnection(conexao.ConnString);
 
+            string sql = "SELECT * FROM cafeteria.\"capsulas\"";
+            NpgsqlCommand cmd = new NpgsqlCommand(sql, conn);
+            conn.Open();
+            NpgsqlDataReader reader = cmd.ExecuteReader();
+
+            dtCapsula.Load(reader);
+            conn.Close();
+            return dtCapsula;
         }
+
 
         public void EditarCapsulas(Capsula capsula)
         {
