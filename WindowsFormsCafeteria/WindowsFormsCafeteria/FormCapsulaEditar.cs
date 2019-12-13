@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsCafeteria
 {
-    public partial class FormPrincipal : Form
+    public partial class FormCapsulaEditar : Form
     {
-        public FormPrincipal()
+        public FormCapsulaEditar()
         {
             InitializeComponent();
-        }
-
-        private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FormCapsulaIncluir form = new FormCapsulaIncluir();
-            form.Show();
         }
     }
 }

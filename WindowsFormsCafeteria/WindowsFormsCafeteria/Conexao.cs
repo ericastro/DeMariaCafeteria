@@ -36,7 +36,7 @@ namespace WindowsFormsCafeteria
         {
             get
             {
-                if (String.IsNullOrEmpty(serverName))
+                if (string.IsNullOrEmpty(serverName))
                     serverName = "127.0.0.1";
                 return serverName;
             }
@@ -47,7 +47,7 @@ namespace WindowsFormsCafeteria
         {
             get
             {
-                if (String.IsNullOrEmpty(port))
+                if (string.IsNullOrEmpty(port))
                     port = "5432";
                 return port;
             }
@@ -58,7 +58,7 @@ namespace WindowsFormsCafeteria
         {
             get
             {
-                if (String.IsNullOrEmpty(userName))
+                if (string.IsNullOrEmpty(userName))
                     userName = "postgres";
                 return userName;
             }
@@ -69,7 +69,7 @@ namespace WindowsFormsCafeteria
         {
             get
             {
-                if (String.IsNullOrEmpty(password))
+                if (string.IsNullOrEmpty(password))
                     password = "123";
                 return password;
             }
@@ -80,7 +80,7 @@ namespace WindowsFormsCafeteria
         {
             get
             {
-                if (String.IsNullOrEmpty(dataBaseName))
+                if (string.IsNullOrEmpty(dataBaseName))
                     dataBaseName = "DeMariaEric";
                 return dataBaseName;
             }
@@ -91,9 +91,9 @@ namespace WindowsFormsCafeteria
         {
             get
             {
-                if (String.IsNullOrEmpty(connString))
+                if (string.IsNullOrEmpty(connString))
                 {
-                    connString = String.Format("Server={0};Port={1};User Id={2};Password={3};Database={4}", ServerName, port, userName, password, dataBaseName);
+                    connString = string.Format("Server={0};Port={1};User Id={2};Password={3};Database={4}", ServerName, port, userName, password, dataBaseName);
                 }
                 return connString;
             }
@@ -139,7 +139,7 @@ namespace WindowsFormsCafeteria
 
         private string DataBaseFromJson()
         {
-            return "Cafeteria";
+            return "DeMariaEric";
         }
     }
 }

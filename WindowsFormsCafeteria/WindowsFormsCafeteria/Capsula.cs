@@ -17,26 +17,9 @@ namespace WindowsFormsCafeteria
 
         }
 
-        public int Capsulas_id { get; set; }
+        public int CapsulasId { get; set; }
         public string Descricao { get; set; }
-        public int Forca
-        {
-            get
-            {
-                return forca;
-            }
-            set
-            {
-                if( (this.forca > 0) && (this.forca < 11) )
-                {
-                    forca = Forca;
-                }
-                else
-                {
-                    forca = 0;
-                }
-            }
-        }
+        public int Forca { get; set; }
 
         public string IncluirCapsula(Capsula capsula)
         {
@@ -44,13 +27,12 @@ namespace WindowsFormsCafeteria
             try
             {
                 Conexao conexao = new Conexao();
-                /* Insertion After Validations*/
                 using (NpgsqlConnection conn = new NpgsqlConnection(conexao.ConnString))
                 {
                     conn.Open();
                     NpgsqlCommand cmd = new NpgsqlCommand();
                     cmd.Connection = conn;
-                    cmd.CommandText = "Insert into public.\"capsulas\" (descricao,forca) values (@descricao,@forca)";
+                    cmd.CommandText = "Insert into cafeteria.\"capsulas\" (descricao,forca) values (@descricao,@forca)";
                     cmd.CommandType = CommandType.Text;
                     cmd.Parameters.Add(new NpgsqlParameter("@descricao", capsula.Descricao));
                     cmd.Parameters.Add(new NpgsqlParameter("@forca", capsula.Forca));
@@ -66,7 +48,7 @@ namespace WindowsFormsCafeteria
             return result;
         }
 
-        public void LitarCapsulas()
+        public void ListarCapsulas()
         {
 
         }

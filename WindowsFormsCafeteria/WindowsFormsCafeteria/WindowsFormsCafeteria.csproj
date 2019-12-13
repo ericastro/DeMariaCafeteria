@@ -81,6 +81,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Conexao.cs" />
+    <Compile Include="FormCapsulaIncluir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCapsulaIncluir.Designer.cs">
+      <DependentUpon>FormCapsulaIncluir.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormCapsulaIncluir.resx">
+      <DependentUpon>FormCapsulaIncluir.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
