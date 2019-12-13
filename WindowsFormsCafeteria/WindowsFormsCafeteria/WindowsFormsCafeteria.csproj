@@ -81,6 +81,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Conexao.cs" />
+    <Compile Include="FormCapsulaEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCapsulaEditar.Designer.cs">
+      <DependentUpon>FormCapsulaEditar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCapsulaIncluir.cs">
       <SubType>Form</SubType>
     </Compile>

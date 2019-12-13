@@ -22,5 +22,40 @@ namespace WindowsFormsCafeteria
             FormCapsulaIncluir form = new FormCapsulaIncluir();
             form.Show();
         }
+
+        private void listarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ainda estamos trabalhando neste módulo!");
+        }
+
+        private void editarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ainda estamos trabalhando neste módulo!");
+        }
+
+        private void excluirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ainda estamos trabalhando neste módulo!");
+        }
+
+        private void cadastrarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ainda estamos trabalhando neste módulo!");
+        }
+
+        private void listarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ainda estamos trabalhando neste módulo!");
+        }
+
+        private void editarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ainda estamos trabalhando neste módulo!");
+        }
+
+        private void excluirToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ainda estamos trabalhando neste módulo!");
+        }
     }
 }
